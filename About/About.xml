@@ -1,0 +1,16 @@
+<ModMetaData>
+
+<packageId>InsertSampleText.UtilityTools</packageId>
+<name>Utility Tools</name>
+<author>InsertSampleText</author>
+
+<description>
+This mod adds accessories meant to make it look like Pawns have tools to work with 
+while doing their jobs, while also adding some neat work buffs.
+</description>
+
+<supportedVersions>
+  <li>1.6</li>
+</supportedVersions>
+
+</ModMetaData>
