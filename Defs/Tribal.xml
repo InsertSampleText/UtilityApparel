@@ -1,0 +1,110 @@
+<Defs>
+
+    <ThingDef ParentName="ApparelBase">
+        <defName>UA_BigBulkyRocks</defName>
+        <label>big bulky rocks</label>
+        <description>A collection of hard materials broken into sizeable, bulky shapes to beat things into shape. Useful for construction and mining.</description>
+        <techLevel>Neolithic</techLevel>
+        <tradeability>Sellable</tradeability>
+        <tradeTags>
+            <li>Clothing</li>
+        </tradeTags>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+            <researchPrerequisite>TribalTools</researchPrerequisite>
+            <useIngredientsForColor>false</useIngredientsForColor>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>CraftingSpot</li>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+        </recipeMaker>
+
+        <costList>
+            <Steel>5</Steel>
+        </costList>
+
+        <statBases>
+            <WorkToMake>1200</WorkToMake>
+            <Mass>4</Mass>
+            <Flammability>0.2</Flammability>
+            <EquipDelay>1</EquipDelay>
+        </statBases>
+
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+
+        <generateAllowChance>0.10</generateAllowChance>
+
+        <equippedStatOffsets>
+            <ConstructionSpeed>0.10</ConstructionSpeed>
+            <ConstructSuccessChance>0.05</ConstructSuccessChance>
+            <SmoothingSpeed>0.1</SmoothingSpeed>
+            <MiningSpeed>0.10</MiningSpeed>
+            <MiningYield>0.05</MiningYield>
+        </equippedStatOffsets>
+
+        <graphicData>
+            <texPath>Tribal/BigBulkyRocks/BigBulkyRocks</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <apparel>
+            <wornGraphicPath>Tribal/BigBulkyRocks/BigBulkyRocks</wornGraphicPath>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <tags>
+                <li>UA_Neolithic</li>
+            </tags>
+            
+            <wornGraphicData>
+            
+                <renderUtilityAsPack>true</renderUtilityAsPack>
+                
+                <north>
+                    <offset>(-0,-0.2)</offset>
+                </north>
+                <south>
+                    <offset>(-0,-0.2)</offset>
+                </south>
+                <east>
+                    <offset>(-0,-0.2)</offset>
+                </east>
+                <west>
+                    <offset>(-0,-0.2)</offset>
+                </west>
+                
+                <male>
+                    <scale>(0.6,0.6)</scale>
+                </male>
+                <female>
+                    <scale>(0.6,0.6)</scale>
+                </female>
+                <thin>
+                    <scale>(0.6,0.6)</scale>
+                </thin>
+                <hulk>
+                    <scale>(0.75,0.75)</scale>
+                </hulk>
+                <fat>
+                    <scale>(0.75,0.75)</scale>
+                </fat>
+                
+            </wornGraphicData>
+            
+        </apparel>
+    </ThingDef>
+
+</Defs>

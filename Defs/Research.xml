@@ -1,13 +1,13 @@
 <Defs>
 
     <ResearchTabDef>
-        <defName>UtilityTools</defName>
-        <label>Utility Tools</label>
+        <defName>UtilityApparel</defName>
+        <label>Utility Apparel</label>
 
     </ResearchTabDef>
 
     <ResearchProjectDef>
-        <tab>UtilityTools</tab>
+        <tab>UtilityApparel</tab>
         <defName>TribalTools</defName>
         <label>Tribal Tools</label>
         <description>Break rocks into servicable shapes.</description>
@@ -18,7 +18,7 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <tab>UtilityTools</tab>
+        <tab>UtilityApparel</tab>
         <defName>BasicTools</defName>
         <label>Basic Tools</label>
         <description>Craft simple tools using metalworking.</description>
@@ -33,11 +33,10 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <tab>UtilityTools</tab>
+        <tab>UtilityApparel</tab>
         <defName>IndustrialTools</defName>
         <label>Industrial Tools</label>
-        <description>Craft industrial tools by harnessing electricity and 
-        creating fine machinery.</description>
+        <description>Craft industrial tools by harnessing electricity and creating fine machinery.</description>
         <baseCost>1000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
@@ -49,11 +48,11 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <tab>UtilityTools</tab>
+        <tab>UtilityApparel</tab>
         <defName>SpacerTools</defName>
         <label>Spacer Tools</label>
-        <description>Craft advanced tools that can shift in 
-        configuration with no drawbacks to performance.</description>
+        <description>Craft advanced tools that can shift in configuration with no drawbacks to
+            performance.</description>
         <baseCost>2000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
@@ -65,11 +64,10 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <tab>UtilityTools</tab>
+        <tab>UtilityApparel</tab>
         <defName>UltraTools</defName>
         <label>Ultra Tools</label>
-        <description>Craft tools that utilize AI and nanomachines that adapt to a user's 
-        needs. </description>
+        <description>Craft tools that utilize AI and nanomachines that adapt to a user's needs.</description>
         <baseCost>3000</baseCost>
         <techLevel>Ultra</techLevel>
         <prerequisites>
