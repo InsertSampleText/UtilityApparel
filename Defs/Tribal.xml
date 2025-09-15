@@ -90,53 +90,62 @@
 
                 <east>
                     <male>
-                        <offset>(-0.2,0)</offset>
+                        <offset>(-0.2,-0.2)</offset>
                     </male>
                     <female>
-                        <offset>(-0.2,0)</offset>
+                        <offset>(-0.2,-0.2)</offset>
                     </female>
                     <thin>
-                        <offset>(-0.2,0)</offset>
+                        <offset>(-0.2,-0.2)</offset>
                     </thin>
                     <hulk>
-                        <offset>(-0.2,0)</offset>
+                        <offset>(-0.3,-0.2)</offset>
                     </hulk>
                     <fat>
-
+                        <offset>(-0.4,-0.2)</offset>
                     </fat>
                 </east>
                 <west>
                     <male>
-                        <offset>(0.2,0)</offset>
+                        <offset>(0.2,-0.2)</offset>
                     </male>
                     <female>
-                        <offset>(0.2,0)</offset>
+                        <offset>(0.2,-0.2)</offset>
                     </female>
                     <thin>
-                        <offset>(0.2,0)</offset>
+                        <offset>(0.2,-0.2)</offset>
                     </thin>
                     <hulk>
-                        <offset>(0.2,0)</offset>
+                        <offset>(0.3,-0.2)</offset>
                     </hulk>
                     <fat>
-
+                        <offset>(0.4,-0.2)</offset>
                     </fat>
                 </west>
 
+                <north>
+                    <hulk>
+                        <offset>(0,-0.2)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(0,-0.2)</offset>
+                    </fat>
+                </north>
+
                 <male>
-                    <scale>(0.5,0.5)</scale>
+                    <scale>(0.4,0.4)</scale>
                 </male>
                 <female>
-                    <scale>(0.5,0.5)</scale>
+                    <scale>(0.4,0.4)</scale>
                 </female>
                 <thin>
-                    <scale>(0.3,0.3)</scale>
+                    <scale>(0.5,0.5)</scale>
                 </thin>
                 <hulk>
-                    <scale>(1.25,0.75)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </hulk>
                 <fat>
-                    <scale>(1.25,0.75)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </fat>
 
             </wornGraphicData>
@@ -232,53 +241,62 @@
 
                 <east>
                     <male>
-                        <offset>(-0.2,0)</offset>
+                        <offset>(-0.2,-0.2)</offset>
                     </male>
                     <female>
-                        <offset>(-0.2,0)</offset>
+                        <offset>(-0.2,-0.2)</offset>
                     </female>
                     <thin>
-                        <offset>(-0.2,0)</offset>
+                        <offset>(-0.2,-0.2)</offset>
                     </thin>
                     <hulk>
-                        <offset>(-0.2,0)</offset>
+                        <offset>(-0.3,-0.2)</offset>
                     </hulk>
                     <fat>
-
+                        <offset>(-0.4,-0.2)</offset>
                     </fat>
                 </east>
                 <west>
                     <male>
-                        <offset>(0.2,0)</offset>
+                        <offset>(0.2,-0.2)</offset>
                     </male>
                     <female>
-                        <offset>(0.2,0)</offset>
+                        <offset>(0.2,-0.2)</offset>
                     </female>
                     <thin>
-                        <offset>(0.2,0)</offset>
+                        <offset>(0.2,-0.2)</offset>
                     </thin>
                     <hulk>
-                        <offset>(0.2,0)</offset>
+                        <offset>(0.3,-0.2)</offset>
                     </hulk>
                     <fat>
-
+                        <offset>(0.4,-0.2)</offset>
                     </fat>
                 </west>
 
+                <north>
+                    <hulk>
+                        <offset>(0,-0.2)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(0,-0.2)</offset>
+                    </fat>
+                </north>
+
                 <male>
-                    <scale>(0.5,0.5)</scale>
+                    <scale>(0.4,0.4)</scale>
                 </male>
                 <female>
-                    <scale>(0.5,0.5)</scale>
+                    <scale>(0.4,0.4)</scale>
                 </female>
                 <thin>
-                    <scale>(0.3,0.3)</scale>
+                    <scale>(0.5,0.5)</scale>
                 </thin>
                 <hulk>
-                    <scale>(1.25,0.75)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </hulk>
                 <fat>
-                    <scale>(1.25,0.75)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </fat>
 
             </wornGraphicData>
@@ -376,59 +394,69 @@
 
                 <east>
                     <male>
-                        <offset>(-0.2,0)</offset>
+                        <offset>(-0.2,-0.2)</offset>
                     </male>
                     <female>
-                        <offset>(-0.2,0)</offset>
+                        <offset>(-0.2,-0.2)</offset>
                     </female>
                     <thin>
-                        <offset>(-0.2,0)</offset>
+                        <offset>(-0.2,-0.2)</offset>
                     </thin>
                     <hulk>
-                        <offset>(-0.2,0)</offset>
+                        <offset>(-0.3,-0.2)</offset>
                     </hulk>
                     <fat>
-
+                        <offset>(-0.4,-0.2)</offset>
                     </fat>
                 </east>
                 <west>
                     <male>
-                        <offset>(0.2,0)</offset>
+                        <offset>(0.2,-0.2)</offset>
                     </male>
                     <female>
-                        <offset>(0.2,0)</offset>
+                        <offset>(0.2,-0.2)</offset>
                     </female>
                     <thin>
-                        <offset>(0.2,0)</offset>
+                        <offset>(0.2,-0.2)</offset>
                     </thin>
                     <hulk>
-                        <offset>(0.2,0)</offset>
+                        <offset>(0.3,-0.2)</offset>
                     </hulk>
                     <fat>
-
+                        <offset>(0.4,-0.2)</offset>
                     </fat>
                 </west>
 
+                <north>
+                    <hulk>
+                        <offset>(0,-0.2)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(0,-0.2)</offset>
+                    </fat>
+                </north>
+
                 <male>
-                    <scale>(0.5,0.5)</scale>
+                    <scale>(0.4,0.4)</scale>
                 </male>
                 <female>
-                    <scale>(0.5,0.5)</scale>
+                    <scale>(0.4,0.4)</scale>
                 </female>
                 <thin>
-                    <scale>(0.3,0.3)</scale>
+                    <scale>(0.5,0.5)</scale>
                 </thin>
                 <hulk>
-                    <scale>(1.25,0.75)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </hulk>
                 <fat>
-                    <scale>(1.25,0.75)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </fat>
 
             </wornGraphicData>
 
         </apparel>
     </ThingDef>
+
 
     <ThingDef ParentName="ApparelBase">
         <defName>UA_TribalMedicineBag</defName>
@@ -455,18 +483,13 @@
             </recipeUsers>
         </recipeMaker>
 
-        <stuffCategories>
-            <li>Fabric</li>
-        </stuffCategories>
-        <costStuffCount>15</costStuffCount>
-
         <costList>
             <MedicineHerbal>5</MedicineHerbal>
         </costList>
 
         <statBases>
             <WorkToMake>1200</WorkToMake>
-            <Mass>4</Mass>
+            <Mass>3</Mass>
             <Flammability>0.8</Flammability>
             <EquipDelay>1</EquipDelay>
         </statBases>
@@ -513,33 +536,77 @@
                     <offset>(-0,-0.2)</offset>
                 </south>
                 <east>
-                    <offset>(-0,-0.2)</offset>
+                    <offset>(-0.1,-0.2)</offset>
                 </east>
                 <west>
-                    <offset>(-0,-0.2)</offset>
+                    <offset>(0.1,-0.2)</offset>
                 </west>
 
+
+                <east>
+                    <male>
+                        <offset>(-0.2,-0.2)</offset>
+                    </male>
+                    <female>
+                        <offset>(-0.2,-0.2)</offset>
+                    </female>
+                    <thin>
+                        <offset>(-0.2,-0.2)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(-0.3,-0.2)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(-0.4,-0.2)</offset>
+                    </fat>
+                </east>
+                <west>
+                    <male>
+                        <offset>(0.2,-0.2)</offset>
+                    </male>
+                    <female>
+                        <offset>(0.2,-0.2)</offset>
+                    </female>
+                    <thin>
+                        <offset>(0.2,-0.2)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(0.3,-0.2)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(0.4,-0.2)</offset>
+                    </fat>
+                </west>
+
+                <north>
+                    <hulk>
+                        <offset>(0,-0.2)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(0,-0.2)</offset>
+                    </fat>
+                </north>
+
                 <male>
-                    <scale>(0.6,0.6)</scale>
+                    <scale>(0.4,0.4)</scale>
                 </male>
                 <female>
-                    <scale>(0.6,0.6)</scale>
+                    <scale>(0.4,0.4)</scale>
                 </female>
                 <thin>
-                    <scale>(0.6,0.6)</scale>
+                    <scale>(0.5,0.5)</scale>
                 </thin>
                 <hulk>
-                    <scale>(0.75,0.75)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </hulk>
                 <fat>
-                    <scale>(0.75,0.75)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </fat>
 
             </wornGraphicData>
 
         </apparel>
     </ThingDef>
-
 
     <ThingDef ParentName="ApparelBase">
         <defName>UA_TribalAnimalBag</defName>
@@ -565,18 +632,13 @@
             </recipeUsers>
         </recipeMaker>
 
-        <stuffCategories>
-            <li>Fabric</li>
-        </stuffCategories>
-        <costStuffCount>15</costStuffCount>
-
         <costList>
             <MedicineHerbal>5</MedicineHerbal>
         </costList>
 
         <statBases>
             <WorkToMake>1200</WorkToMake>
-            <Mass>4</Mass>
+            <Mass>3</Mass>
             <Flammability>0.8</Flammability>
             <EquipDelay>1</EquipDelay>
         </statBases>
@@ -623,31 +685,77 @@
                     <offset>(-0,-0.2)</offset>
                 </south>
                 <east>
-                    <offset>(-0,-0.2)</offset>
+                    <offset>(-0.1,-0.2)</offset>
                 </east>
                 <west>
-                    <offset>(-0,-0.2)</offset>
+                    <offset>(0.1,-0.2)</offset>
                 </west>
 
+
+                <east>
+                    <male>
+                        <offset>(-0.2,-0.2)</offset>
+                    </male>
+                    <female>
+                        <offset>(-0.2,-0.2)</offset>
+                    </female>
+                    <thin>
+                        <offset>(-0.2,-0.2)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(-0.3,-0.2)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(-0.4,-0.2)</offset>
+                    </fat>
+                </east>
+                <west>
+                    <male>
+                        <offset>(0.2,-0.2)</offset>
+                    </male>
+                    <female>
+                        <offset>(0.2,-0.2)</offset>
+                    </female>
+                    <thin>
+                        <offset>(0.2,-0.2)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(0.3,-0.2)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(0.4,-0.2)</offset>
+                    </fat>
+                </west>
+
+                <north>
+                    <hulk>
+                        <offset>(0,-0.2)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(0,-0.2)</offset>
+                    </fat>
+                </north>
+
                 <male>
-                    <scale>(0.6,0.6)</scale>
+                    <scale>(0.4,0.4)</scale>
                 </male>
                 <female>
-                    <scale>(0.6,0.6)</scale>
+                    <scale>(0.4,0.4)</scale>
                 </female>
                 <thin>
-                    <scale>(0.6,0.6)</scale>
+                    <scale>(0.5,0.5)</scale>
                 </thin>
                 <hulk>
-                    <scale>(0.75,0.75)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </hulk>
                 <fat>
-                    <scale>(0.75,0.75)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </fat>
 
             </wornGraphicData>
 
         </apparel>
     </ThingDef>
+
 
 </Defs>
