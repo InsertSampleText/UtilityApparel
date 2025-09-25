@@ -1,37 +1,39 @@
 <Defs>
 
     <ThingDef ParentName="ApparelBase">
-        <defName>UA_BigBulkyRocks</defName>
-        <label>big bulky rocks</label>
-        <description>A collection of hard materials broken into sizeable, bulky shapes to beat
-            things into shape. Useful for construction and mining.</description>
-        <techLevel>Neolithic</techLevel>
+        <defName>UA_SimpleMiningTools</defName>
+        <label>simple mining tools</label>
+        <description>A collection of simple, heavy tools to assist with mining.</description>
+        <techLevel>Medieval</techLevel>
         <tradeability>Sellable</tradeability>
         <tradeTags>
             <li>Clothing</li>
         </tradeTags>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-            <researchPrerequisite>TribalTools</researchPrerequisite>
+            <researchPrerequisite>BasicTools</researchPrerequisite>
             <useIngredientsForColor>false</useIngredientsForColor>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Smith</soundWorking>
             <recipeUsers>
-                <li>CraftingSpot</li>
                 <li>FueledSmithy</li>
                 <li>ElectricSmithy</li>
             </recipeUsers>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
         </recipeMaker>
 
         <costList>
-            <Steel>5</Steel>
+            <Steel>25</Steel>
         </costList>
 
+
         <statBases>
-            <WorkToMake>1200</WorkToMake>
-            <Mass>4</Mass>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>5</Mass>
             <Flammability>0.2</Flammability>
             <EquipDelay>1</EquipDelay>
         </statBases>
@@ -43,20 +45,17 @@
         <generateAllowChance>0.10</generateAllowChance>
 
         <equippedStatOffsets>
-            <ConstructionSpeed>0.10</ConstructionSpeed>
-            <ConstructSuccessChance>0.05</ConstructSuccessChance>
-            <SmoothingSpeed>0.1</SmoothingSpeed>
-            <MiningSpeed>0.10</MiningSpeed>
-            <MiningYield>0.05</MiningYield>
+            <MiningSpeed>0.15</MiningSpeed>
+            <MiningYield>0.10</MiningYield>
         </equippedStatOffsets>
 
         <graphicData>
-            <texPath>Tribal/BigBulkyRocks/BigBulkyRocks</texPath>
+            <texPath>Medieval/SimpleMining/Simple_Mining</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
 
         <apparel>
-            <wornGraphicPath>Tribal/BigBulkyRocks/BigBulkyRocks</wornGraphicPath>
+            <wornGraphicPath>Medieval/SimpleMining/Simple_Mining</wornGraphicPath>
             <careIfWornByCorpse>false</careIfWornByCorpse>
             <careIfDamaged>false</careIfDamaged>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -67,125 +66,112 @@
                 <li>Belt</li>
             </layers>
             <tags>
-                <li>UA_Neolithic</li>
+                <li>UA_Medieval</li>
             </tags>
 
             <wornGraphicData>
-
                 <renderUtilityAsPack>true</renderUtilityAsPack>
-
                 <north>
-                    <offset>(-0,-0.2)</offset>
+                    <male>
+                        <offset>(-0.3, -0.25)</offset>
+                    </male>
+                    <female>
+                        <offset>(-0.3,-0.3)</offset>
+                    </female>
+                    <thin>
+                        <offset>(-0.2,-0.25)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(-0.33,-0.4)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(-0.5,-0.25)</offset>
+                    </fat>
                 </north>
                 <south>
-                    <offset>(-0,-0.2)</offset>
+                    <male>
+                        <offset>(0.3, -0.25)</offset>
+                    </male>
+                    <female>
+                        <offset>(0.3,-0.3)</offset>
+                    </female>
+                    <thin>
+                        <offset>(0.2,-0.25)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(0.33,-0.4)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(0.5,-0.25)</offset>
+                    </fat>
                 </south>
                 <east>
-                    <offset>(-0.1,-0.2)</offset>
-                </east>
-                <west>
-                    <offset>(0.1,-0.2)</offset>
-                </west>
-
-
-                <east>
-                    <male>
-                        <offset>(-0.2,-0.2)</offset>
-                    </male>
-                    <female>
-                        <offset>(-0.2,-0.2)</offset>
-                    </female>
+                    <offset>(-0.05,-0.3)</offset>
+                    <hulk>
+                        <offset>(-0.1,-0.1)</offset>
+                    </hulk>
                     <thin>
-                        <offset>(-0.2,-0.2)</offset>
+                        <offset>(-0.1,-0.0)</offset>
                     </thin>
-                    <hulk>
-                        <offset>(-0.3,-0.2)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(-0.4,-0.2)</offset>
-                    </fat>
-                </east>
-                <west>
-                    <male>
-                        <offset>(0.2,-0.2)</offset>
-                    </male>
                     <female>
-                        <offset>(0.2,-0.2)</offset>
+                        <offset>(-0.05,-0.0)</offset>
                     </female>
-                    <thin>
-                        <offset>(0.2,-0.2)</offset>
-                    </thin>
-                    <hulk>
-                        <offset>(0.3,-0.2)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(0.4,-0.2)</offset>
-                    </fat>
-                </west>
-
-                <north>
-                    <hulk>
-                        <offset>(0,-0.2)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(0,-0.2)</offset>
-                    </fat>
-                </north>
-
+                </east>
                 <male>
-                    <scale>(0.4,0.4)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </male>
                 <female>
-                    <scale>(0.4,0.4)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </female>
                 <thin>
-                    <scale>(0.5,0.5)</scale>
+                    <scale>(0.7,0.7)</scale>
                 </thin>
                 <hulk>
-                    <scale>(0.6,0.6)</scale>
+                    <scale>(0.75,0.75)</scale>
                 </hulk>
                 <fat>
-                    <scale>(0.6,0.6)</scale>
+                    <scale>(0.75,0.75)</scale>
                 </fat>
-
             </wornGraphicData>
 
         </apparel>
     </ThingDef>
 
 
+
     <ThingDef ParentName="ApparelBase">
-        <defName>UA_BigSharpRocks</defName>
-        <label>big sharp rocks</label>
-        <description>A collection of hard materials broken into sizeable, sharp shapes to cut things
-            into shape. Useful for plant work.</description>
-        <techLevel>Neolithic</techLevel>
+        <defName>UA_SimplePlantTools</defName>
+        <label>simple plant tools</label>
+        <description>A collection of simple, heavy tools to assist with agricultural work.</description>
+        <techLevel>Medieval</techLevel>
         <tradeability>Sellable</tradeability>
         <tradeTags>
             <li>Clothing</li>
         </tradeTags>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-            <researchPrerequisite>TribalTools</researchPrerequisite>
+            <researchPrerequisite>BasicTools</researchPrerequisite>
             <useIngredientsForColor>false</useIngredientsForColor>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Smith</soundWorking>
             <recipeUsers>
-                <li>CraftingSpot</li>
                 <li>FueledSmithy</li>
                 <li>ElectricSmithy</li>
             </recipeUsers>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
         </recipeMaker>
 
         <costList>
-            <Steel>5</Steel>
+            <Steel>25</Steel>
         </costList>
 
         <statBases>
-            <WorkToMake>1200</WorkToMake>
-            <Mass>4</Mass>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>5</Mass>
             <Flammability>0.2</Flammability>
             <EquipDelay>1</EquipDelay>
         </statBases>
@@ -197,17 +183,17 @@
         <generateAllowChance>0.10</generateAllowChance>
 
         <equippedStatOffsets>
-            <PlantWorkSpeed>0.10</PlantWorkSpeed>
-            <PlantHarvestYield>0.05</PlantHarvestYield>
+            <PlantWorkSpeed>0.15</PlantWorkSpeed>
+            <PlantHarvestYield>0.10</PlantHarvestYield>
         </equippedStatOffsets>
 
         <graphicData>
-            <texPath>Tribal/BigSharpRocks/BigSharpRocks</texPath>
+            <texPath>Medieval/SimplePlants/Simple_Plants</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
 
         <apparel>
-            <wornGraphicPath>Tribal/BigSharpRocks/BigSharpRocks</wornGraphicPath>
+            <wornGraphicPath>Medieval/SimplePlants/Simple_Plants</wornGraphicPath>
             <careIfWornByCorpse>false</careIfWornByCorpse>
             <careIfDamaged>false</careIfDamaged>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -218,125 +204,113 @@
                 <li>Belt</li>
             </layers>
             <tags>
-                <li>UA_Neolithic</li>
+                <li>UA_Medieval</li>
             </tags>
 
             <wornGraphicData>
-
                 <renderUtilityAsPack>true</renderUtilityAsPack>
-
                 <north>
-                    <offset>(-0,-0.2)</offset>
+                    <male>
+                        <offset>(-0.3, -0.25)</offset>
+                    </male>
+                    <female>
+                        <offset>(-0.3,-0.3)</offset>
+                    </female>
+                    <thin>
+                        <offset>(-0.2,-0.25)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(-0.33,-0.4)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(-0.5,-0.25)</offset>
+                    </fat>
                 </north>
                 <south>
-                    <offset>(-0,-0.2)</offset>
+                    <male>
+                        <offset>(0.3, -0.25)</offset>
+                    </male>
+                    <female>
+                        <offset>(0.3,-0.3)</offset>
+                    </female>
+                    <thin>
+                        <offset>(0.2,-0.25)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(0.33,-0.4)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(0.5,-0.25)</offset>
+                    </fat>
                 </south>
                 <east>
-                    <offset>(-0.1,-0.2)</offset>
-                </east>
-                <west>
-                    <offset>(0.1,-0.2)</offset>
-                </west>
-
-
-                <east>
-                    <male>
-                        <offset>(-0.2,-0.2)</offset>
-                    </male>
-                    <female>
-                        <offset>(-0.2,-0.2)</offset>
-                    </female>
+                    <offset>(-0.05,-0.3)</offset>
+                    <hulk>
+                        <offset>(-0.1,-0.1)</offset>
+                    </hulk>
                     <thin>
-                        <offset>(-0.2,-0.2)</offset>
+                        <offset>(-0.1,-0.0)</offset>
                     </thin>
-                    <hulk>
-                        <offset>(-0.3,-0.2)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(-0.4,-0.2)</offset>
-                    </fat>
-                </east>
-                <west>
-                    <male>
-                        <offset>(0.2,-0.2)</offset>
-                    </male>
                     <female>
-                        <offset>(0.2,-0.2)</offset>
+                        <offset>(-0.05,-0.0)</offset>
                     </female>
-                    <thin>
-                        <offset>(0.2,-0.2)</offset>
-                    </thin>
-                    <hulk>
-                        <offset>(0.3,-0.2)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(0.4,-0.2)</offset>
-                    </fat>
-                </west>
-
-                <north>
-                    <hulk>
-                        <offset>(0,-0.2)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(0,-0.2)</offset>
-                    </fat>
-                </north>
-
+                </east>
                 <male>
-                    <scale>(0.4,0.4)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </male>
                 <female>
-                    <scale>(0.4,0.4)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </female>
                 <thin>
-                    <scale>(0.5,0.5)</scale>
+                    <scale>(0.7,0.7)</scale>
                 </thin>
                 <hulk>
-                    <scale>(0.6,0.6)</scale>
+                    <scale>(0.75,0.75)</scale>
                 </hulk>
                 <fat>
-                    <scale>(0.6,0.6)</scale>
+                    <scale>(0.75,0.75)</scale>
                 </fat>
-
             </wornGraphicData>
 
         </apparel>
     </ThingDef>
 
 
+
+    
     <ThingDef ParentName="ApparelBase">
-        <defName>UA_SmallSharpRocks</defName>
-        <label>small sharp rocks</label>
-        <description>A collection of hard materials broken into small, sharp shapes to cut things
-            into shape. Useful for cutting meat and food.</description>
-        <techLevel>Neolithic</techLevel>
+        <defName>UA_SimpleBuildingTools</defName>
+        <label>simple building tools</label>
+        <description>A collection of simple, heavy tools to assist with construction work.</description>
+        <techLevel>Medieval</techLevel>
         <tradeability>Sellable</tradeability>
         <tradeTags>
             <li>Clothing</li>
         </tradeTags>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-            <researchPrerequisite>TribalTools</researchPrerequisite>
+            <researchPrerequisite>BasicTools</researchPrerequisite>
             <useIngredientsForColor>false</useIngredientsForColor>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Smith</soundWorking>
             <recipeUsers>
-                <li>CraftingSpot</li>
                 <li>FueledSmithy</li>
                 <li>ElectricSmithy</li>
             </recipeUsers>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
         </recipeMaker>
 
         <costList>
-            <Steel>5</Steel>
+            <Steel>25</Steel>
         </costList>
 
         <statBases>
-            <WorkToMake>1200</WorkToMake>
-            <Mass>3</Mass>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>5</Mass>
             <Flammability>0.2</Flammability>
             <EquipDelay>1</EquipDelay>
         </statBases>
@@ -348,19 +322,18 @@
         <generateAllowChance>0.10</generateAllowChance>
 
         <equippedStatOffsets>
-            <CookSpeed>0.10</CookSpeed>
-            <ButcheryFleshEfficiency>0.05</ButcheryFleshEfficiency>
-            <ButcheryFleshSpeed>0.10</ButcheryFleshSpeed>
-            <MedicalOperationSpeed>0.10</MedicalOperationSpeed>
+            <ConstructionSpeed>0.15</ConstructionSpeed>
+            <ConstructSuccessChance>0.10</ConstructSuccessChance>
+            <SmoothingSpeed>0.2</SmoothingSpeed>
         </equippedStatOffsets>
 
         <graphicData>
-            <texPath>Tribal/SmallSharpRocks/SmallSharpRocks</texPath>
+            <texPath>Medieval/SimpleBuilding/Simple_Building</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
 
         <apparel>
-            <wornGraphicPath>Tribal/SmallSharpRocks/SmallSharpRocks</wornGraphicPath>
+            <wornGraphicPath>Medieval/SimpleBuilding/Simple_Building</wornGraphicPath>
             <careIfWornByCorpse>false</careIfWornByCorpse>
             <careIfDamaged>false</careIfDamaged>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -371,106 +344,231 @@
                 <li>Belt</li>
             </layers>
             <tags>
-                <li>UA_Neolithic</li>
+                <li>UA_Medieval</li>
             </tags>
 
             <wornGraphicData>
-
                 <renderUtilityAsPack>true</renderUtilityAsPack>
-
                 <north>
-                    <offset>(-0,-0.2)</offset>
+                    <male>
+                        <offset>(-0.3, -0.25)</offset>
+                    </male>
+                    <female>
+                        <offset>(-0.3,-0.3)</offset>
+                    </female>
+                    <thin>
+                        <offset>(-0.2,-0.25)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(-0.33,-0.4)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(-0.5,-0.25)</offset>
+                    </fat>
                 </north>
                 <south>
-                    <offset>(-0,-0.2)</offset>
+                    <male>
+                        <offset>(0.3, -0.25)</offset>
+                    </male>
+                    <female>
+                        <offset>(0.3,-0.3)</offset>
+                    </female>
+                    <thin>
+                        <offset>(0.2,-0.25)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(0.33,-0.4)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(0.5,-0.25)</offset>
+                    </fat>
                 </south>
                 <east>
-                    <offset>(-0.1,-0.2)</offset>
-                </east>
-                <west>
-                    <offset>(0.1,-0.2)</offset>
-                </west>
-
-
-                <east>
-                    <male>
-                        <offset>(-0.2,-0.2)</offset>
-                    </male>
-                    <female>
-                        <offset>(-0.2,-0.2)</offset>
-                    </female>
+                    <offset>(-0.05,-0.3)</offset>
+                    <hulk>
+                        <offset>(-0.1,-0.1)</offset>
+                    </hulk>
                     <thin>
-                        <offset>(-0.2,-0.2)</offset>
+                        <offset>(-0.1,-0.0)</offset>
                     </thin>
-                    <hulk>
-                        <offset>(-0.3,-0.2)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(-0.4,-0.2)</offset>
-                    </fat>
-                </east>
-                <west>
-                    <male>
-                        <offset>(0.2,-0.2)</offset>
-                    </male>
                     <female>
-                        <offset>(0.2,-0.2)</offset>
+                        <offset>(-0.05,-0.0)</offset>
                     </female>
-                    <thin>
-                        <offset>(0.2,-0.2)</offset>
-                    </thin>
-                    <hulk>
-                        <offset>(0.3,-0.2)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(0.4,-0.2)</offset>
-                    </fat>
-                </west>
-
-                <north>
-                    <hulk>
-                        <offset>(0,-0.2)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(0,-0.2)</offset>
-                    </fat>
-                </north>
-
+                </east>
                 <male>
-                    <scale>(0.4,0.4)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </male>
                 <female>
-                    <scale>(0.4,0.4)</scale>
+                    <scale>(0.6,0.6)</scale>
                 </female>
                 <thin>
-                    <scale>(0.5,0.5)</scale>
+                    <scale>(0.7,0.7)</scale>
                 </thin>
                 <hulk>
-                    <scale>(0.6,0.6)</scale>
+                    <scale>(0.75,0.75)</scale>
                 </hulk>
                 <fat>
-                    <scale>(0.6,0.6)</scale>
+                    <scale>(0.75,0.75)</scale>
                 </fat>
-
             </wornGraphicData>
 
         </apparel>
     </ThingDef>
 
 
+
     <ThingDef ParentName="ApparelBase">
-        <defName>UA_TribalMedicineBag</defName>
-        <label>tribal medicine bag</label>
-        <description>A bag of herbal medicines and crude bandages to assist with tending in the
+        <defName>UA_SimpleCookingTools</defName>
+        <label>simple cooking tools</label>
+        <description>A collection of simple, heavy tools to assist with cooking and buthering.</description>
+        <techLevel>Medieval</techLevel>
+        <tradeability>Sellable</tradeability>
+        <tradeTags>
+            <li>Clothing</li>
+        </tradeTags>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+            <researchPrerequisite>BasicTools</researchPrerequisite>
+            <useIngredientsForColor>false</useIngredientsForColor>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+
+        <costList>
+            <Steel>25</Steel>
+        </costList>
+
+        <statBases>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>5</Mass>
+            <Flammability>0.2</Flammability>
+            <EquipDelay>1</EquipDelay>
+        </statBases>
+
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+
+        <generateAllowChance>0.10</generateAllowChance>
+
+        <equippedStatOffsets>
+            <CookSpeed>0.15</CookSpeed>
+            <ButcheryFleshEfficiency>0.10</ButcheryFleshEfficiency>
+            <ButcheryFleshSpeed>0.15</ButcheryFleshSpeed>
+        </equippedStatOffsets>
+
+        <graphicData>
+            <texPath>Medieval/SimpleCooking/Simple_Cooking</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <apparel>
+            <wornGraphicPath>Medieval/SimpleCooking/Simple_Cooking</wornGraphicPath>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <tags>
+                <li>UA_Medieval</li>
+            </tags>
+
+            <wornGraphicData>
+                <renderUtilityAsPack>true</renderUtilityAsPack>
+                <north>
+                    <male>
+                        <offset>(-0.3, -0.25)</offset>
+                    </male>
+                    <female>
+                        <offset>(-0.3,-0.3)</offset>
+                    </female>
+                    <thin>
+                        <offset>(-0.2,-0.25)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(-0.33,-0.4)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(-0.5,-0.25)</offset>
+                    </fat>
+                </north>
+                <south>
+                    <male>
+                        <offset>(0.3, -0.25)</offset>
+                    </male>
+                    <female>
+                        <offset>(0.3,-0.3)</offset>
+                    </female>
+                    <thin>
+                        <offset>(0.2,-0.25)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(0.33,-0.4)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(0.5,-0.25)</offset>
+                    </fat>
+                </south>
+                <east>
+                    <offset>(-0.05,-0.3)</offset>
+                    <hulk>
+                        <offset>(-0.1,-0.1)</offset>
+                    </hulk>
+                    <thin>
+                        <offset>(-0.1,-0.0)</offset>
+                    </thin>
+                    <female>
+                        <offset>(-0.05,-0.0)</offset>
+                    </female>
+                </east>
+                <male>
+                    <scale>(0.6,0.6)</scale>
+                </male>
+                <female>
+                    <scale>(0.6,0.6)</scale>
+                </female>
+                <thin>
+                    <scale>(0.7,0.7)</scale>
+                </thin>
+                <hulk>
+                    <scale>(0.75,0.75)</scale>
+                </hulk>
+                <fat>
+                    <scale>(0.75,0.75)</scale>
+                </fat>
+            </wornGraphicData>
+
+        </apparel>
+    </ThingDef>
+
+
+
+    <ThingDef ParentName="ApparelBase">
+        <defName>UA_SimpleMedicineBag</defName>
+        <label>simple medicine bag</label>
+        <description>A bag of herbal medicines, bandages, and simple tools to assist with tending in the
             field.</description>
-        <techLevel>Neolithic</techLevel>
+        <techLevel>Medieval</techLevel>
         <tradeability>Sellable</tradeability>
         <tradeTags>
             <li>Clothing</li>
         </tradeTags>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-            <researchPrerequisite>TribalTools</researchPrerequisite>
+            <researchPrerequisite>BasicTools</researchPrerequisite>
             <useIngredientsForColor>false</useIngredientsForColor>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
@@ -484,11 +582,12 @@
         </recipeMaker>
 
         <costList>
-            <MedicineHerbal>5</MedicineHerbal>
+            <MedicineHerbal>15</MedicineHerbal>
+            <Steel>10</Steel>
         </costList>
 
         <statBases>
-            <WorkToMake>1200</WorkToMake>
+            <WorkToMake>8000</WorkToMake>
             <Mass>2</Mass>
             <Flammability>0.8</Flammability>
             <EquipDelay>1</EquipDelay>
@@ -506,12 +605,12 @@
         </equippedStatOffsets>
 
         <graphicData>
-            <texPath>Tribal/TribalMedicineBag/TribalMedicineBag</texPath>
+            <texPath>Medieval/SimpleMedicine/Simple_Medicine</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
 
         <apparel>
-            <wornGraphicPath>Tribal/TribalMedicineBag/TribalMedicineBag</wornGraphicPath>
+            <wornGraphicPath>Medieval/SimpleMedicine/Simple_Medicine</wornGraphicPath>
             <careIfWornByCorpse>false</careIfWornByCorpse>
             <careIfDamaged>false</careIfDamaged>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -522,7 +621,7 @@
                 <li>Belt</li>
             </layers>
             <tags>
-                <li>UA_Neolithic</li>
+                <li>UA_Medieval</li>
             </tags>
 
             <wornGraphicData>
@@ -618,17 +717,17 @@
     </ThingDef>
 
     <ThingDef ParentName="ApparelBase">
-        <defName>UA_TribalAnimalBag</defName>
-        <label>tribal animal bag</label>
-        <description>A bag of kibble treats and crude toys to assist with handling animals.</description>
-        <techLevel>Neolithic</techLevel>
+        <defName>UA_SimpleAnimalBag</defName>
+        <label>simple animal bag</label>
+        <description>A bag of kibble treats and simple toys to assist with handling animals.</description>
+        <techLevel>Medieval</techLevel>
         <tradeability>Sellable</tradeability>
         <tradeTags>
             <li>Clothing</li>
         </tradeTags>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-            <researchPrerequisite>TribalTools</researchPrerequisite>
+            <researchPrerequisite>BasicTools</researchPrerequisite>
             <useIngredientsForColor>false</useIngredientsForColor>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
@@ -642,11 +741,12 @@
         </recipeMaker>
 
         <costList>
-            <MedicineHerbal>5</MedicineHerbal>
+            <Kibble>15</Kibble>
+            <Wood>20</Wood>
         </costList>
 
         <statBases>
-            <WorkToMake>1200</WorkToMake>
+            <WorkToMake>8000</WorkToMake>
             <Mass>2</Mass>
             <Flammability>0.8</Flammability>
             <EquipDelay>1</EquipDelay>
@@ -664,12 +764,12 @@
         </equippedStatOffsets>
 
         <graphicData>
-            <texPath>Tribal/TribalAnimalBag/TribalAnimalBag</texPath>
+            <texPath>Medieval/SimpleAnimal/Simple_Animal</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
 
         <apparel>
-            <wornGraphicPath>Tribal/TribalAnimalBag/TribalAnimalBag</wornGraphicPath>
+            <wornGraphicPath>Medieval/SimpleAnimal/Simple_Animal</wornGraphicPath>
             <careIfWornByCorpse>false</careIfWornByCorpse>
             <careIfDamaged>false</careIfDamaged>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -680,7 +780,7 @@
                 <li>Belt</li>
             </layers>
             <tags>
-                <li>UA_Neolithic</li>
+                <li>UA_Medieval</li>
             </tags>
 
             <wornGraphicData>
@@ -775,156 +875,5 @@
         </apparel>
     </ThingDef>
 
-
-
-
-    <ThingDef ParentName="ApparelBase">
-        <defName>UA_MortarAndPestle</defName>
-        <label>mortar and pestle</label>
-        <description>A simple, old set of tools use to mush up ingredients into a fine powder or paste. Helps with making drugs</description>
-        <techLevel>Neolithic</techLevel>
-        <tradeability>Sellable</tradeability>
-        <tradeTags>
-            <li>Clothing</li>
-        </tradeTags>
-        <recipeMaker>
-            <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-            <researchPrerequisite>TribalTools</researchPrerequisite>
-            <useIngredientsForColor>false</useIngredientsForColor>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <workSkill>Crafting</workSkill>
-            <effectWorking>Smith</effectWorking>
-            <soundWorking>Recipe_Smith</soundWorking>
-            <recipeUsers>
-                <li>CraftingSpot</li>
-                <li>FueledSmithy</li>
-                <li>ElectricSmithy</li>
-            </recipeUsers>
-        </recipeMaker>
-
-        <costList>
-            <Steel>5</Steel>
-        </costList>
-
-        <statBases>
-            <WorkToMake>1200</WorkToMake>
-            <Mass>1</Mass>
-            <Flammability>0.2</Flammability>
-            <EquipDelay>1</EquipDelay>
-        </statBases>
-
-        <thingCategories>
-            <li>ApparelUtility</li>
-        </thingCategories>
-
-        <generateAllowChance>0.10</generateAllowChance>
-
-        <equippedStatOffsets>
-            <DrugSynthesisSpeed>0.10</DrugSynthesisSpeed>
-            <DrugCookingSpeed>0.10</DrugCookingSpeed>
-        </equippedStatOffsets>
-
-        <graphicData>
-            <texPath>Tribal/TribalMortarAndPestle/MortarAndPestle</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-
-        <apparel>
-            <wornGraphicPath>Tribal/TribalMortarAndPestle/MortarAndPestle</wornGraphicPath>
-            <careIfWornByCorpse>false</careIfWornByCorpse>
-            <careIfDamaged>false</careIfDamaged>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>Waist</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Belt</li>
-            </layers>
-            <tags>
-                <li>UA_Neolithic</li>
-            </tags>
-
-            <wornGraphicData>
-
-                <renderUtilityAsPack>true</renderUtilityAsPack>
-
-                <north>
-                    <offset>(-0,-0.2)</offset>
-                </north>
-                <south>
-                    <offset>(-0,-0.2)</offset>
-                </south>
-                <east>
-                    <offset>(-0.1,-0.2)</offset>
-                </east>
-                <west>
-                    <offset>(0.1,-0.2)</offset>
-                </west>
-
-
-                <east>
-                    <male>
-                        <offset>(-0.2,-0.2)</offset>
-                    </male>
-                    <female>
-                        <offset>(-0.2,-0.2)</offset>
-                    </female>
-                    <thin>
-                        <offset>(-0.2,-0.2)</offset>
-                    </thin>
-                    <hulk>
-                        <offset>(-0.3,-0.2)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(-0.4,-0.2)</offset>
-                    </fat>
-                </east>
-                <west>
-                    <male>
-                        <offset>(0.2,-0.2)</offset>
-                    </male>
-                    <female>
-                        <offset>(0.2,-0.2)</offset>
-                    </female>
-                    <thin>
-                        <offset>(0.2,-0.2)</offset>
-                    </thin>
-                    <hulk>
-                        <offset>(0.3,-0.2)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(0.4,-0.2)</offset>
-                    </fat>
-                </west>
-
-                <north>
-                    <hulk>
-                        <offset>(0,-0.2)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(0,-0.2)</offset>
-                    </fat>
-                </north>
-
-                <male>
-                    <scale>(0.4,0.4)</scale>
-                </male>
-                <female>
-                    <scale>(0.4,0.4)</scale>
-                </female>
-                <thin>
-                    <scale>(0.5,0.5)</scale>
-                </thin>
-                <hulk>
-                    <scale>(0.6,0.6)</scale>
-                </hulk>
-                <fat>
-                    <scale>(0.6,0.6)</scale>
-                </fat>
-
-            </wornGraphicData>
-
-        </apparel>
-    </ThingDef>
 
 </Defs>
